@@ -1,14 +1,14 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-const charConst = {};
+const charCount = {};
 	for(let i = 0; i < str.length; i++)
 		{
 			const char = str[i];
-			charConst[char] = (charConst[char] || 0) + 1;
+			charcount[char] = (charCount[char] || 0) + 1;
 		}
 	for(let  i =0; i < str.length; i++){
 		const char = str[i];
-		if (charConst[char] === 1){
+		if (charCount[char] === 1){
 			return char;
 		}
 	}
